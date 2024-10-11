@@ -5,10 +5,15 @@ public class Main {
         Document doc = new Document("0001", "Tuyen tap nhac Viet", "Nguyen Van A", 2, true);
         Book book = new Book("0002", "Hat cho em", "Nguyen Van B", 5, true, "Am nhac", "1234567891234");
         Thesis thesis = new Thesis("0003", "OOP", "Nguyen Van C", 5, true, "UET", "Nguyen Van D", "Ke thua");
-        doc.printInfo();
+//        doc.printInfo();
         System.out.println();
-        book.printInfo();
+//        book.printInfo();
         System.out.println();
-        thesis.printInfo();
+//        thesis.printInfo();
+
+        User user1 = new User("1", "Dinh khang", "lhang18022005@gmail.com", "Dinhkhang", "sinh vien");
+        Document ans = user1.findDocumentById("1");
+        ans.printInfo();
+
     }
 }

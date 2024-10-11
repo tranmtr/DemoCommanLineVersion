@@ -1,4 +1,5 @@
 package Library_Manager;
+import java.util.*;
 
 public class Document {
     private String id;
@@ -73,5 +74,31 @@ public class Document {
         System.out.println("Author: " + author);
         System.out.println("Quantity: " + quantity);
         System.out.println("Available: " + isAvailable);
+    }
+
+    /**
+     * Day la ham tam thoi de luu tru du lieu, ve sau se thay bang duong dan den database
+     *
+     * @return document.
+     */
+    public static List<Document> getAllDocuments() {
+        List<Document> documents = new ArrayList<>();
+        documents.add(new Document("1", "Java Programming", "Author A", 1, true));
+        documents.add(new Document("2", "Database Systems", "Author B", 2, true));
+        documents.add(new Document("3", "Web Development", "Author C", 3, true));
+        return documents;
+    }
+
+
+    public static Document getDocumentById(String id) {
+        // Logic to retrieve the document from a static list or a database
+        List<Document> documents = getAllDocuments(); // Get all documents
+
+        for (Document doc : documents) {
+            if (doc.getId().equals(id)) {
+                return doc;
+            }
+        }
+        return null;
     }
 }

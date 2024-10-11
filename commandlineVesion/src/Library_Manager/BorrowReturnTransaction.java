@@ -107,7 +107,7 @@ public class BorrowReturnTransaction {
 
     public void completeTransaction() {
         System.out.println("Transaction ID: " + transactionId);
-        System.out.println("User ID: " + userId);
+        System.out.println("User.java ID: " + userId);
         System.out.println("Document ID: " + documentId);
         System.out.println("Date borrow: " + borrowDate);
         if (!isReturn) {
