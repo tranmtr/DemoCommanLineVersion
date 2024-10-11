@@ -8,7 +8,7 @@ public class Library {
     //private List<User> users = new ArrayList<>();
     private List<Book> books;
     private List<Thesis> theses;
-    //private List<StandardUser> standardUsers;
+    //private List<User> users; standardUsers;
     //private List<Librarian> librarians;
 
     /**
